@@ -6,6 +6,7 @@ public class Tester{
   words.add("uni");
   words.add("ebi");
   System.out.println(words.size());
+  System.out.println(words.get(1));
   }
 
 }
