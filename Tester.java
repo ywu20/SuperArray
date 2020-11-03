@@ -7,6 +7,7 @@ public class Tester{
   words.add("ebi");
   System.out.println(words.size());
   System.out.println(words.get(1));
+  System.out.println(words.set(0, "ducky"));
   }
 
 }
