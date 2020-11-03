@@ -3,7 +3,7 @@ private String[] data;
 private int size=0; //The current size
 
 public SuperArray(){
-  data=new String[1];
+  data=new String[10];
 }
 
 public int size(){
@@ -11,7 +11,7 @@ public int size(){
 }
 
 public boolean add (String element){
-  if(size+2>data.length){
+  if(size+1>data.length){
     resize();
   }
   data[size]=element;

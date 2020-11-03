@@ -12,15 +12,15 @@ public class Tester{
   System.out.println( words.get(i) );
 }
   System.out.println(words.size());
-  System.out.println(words.get(1));
   System.out.println(words.set(0, "ducky"));
+  System.out.println(words.get(0));
+  
   SuperArray word = new SuperArray();
-words.add("kani");
-words.add("uni");
-words.add("ebi");
+word.add("kani");
+word.add("uni");
+word.add("ebi");
 for(int i = 0; i < word.size(); i++){
   System.out.println( word.get(i) );
 }
-System.out.println( word.get(2) );
   }
 }
