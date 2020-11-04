@@ -23,11 +23,18 @@ public boolean add (String element){
   return true;
 }
 
-/*
+
 public void add(int index, String element){
-
+  for(int i=size; i>index;i--){
+    if(size+1>data.length){
+      resize();
+    }
+    data[i]=data[i-1];
+  }
+  data[index]=element;
+  size++;
 }
-
+/*
 public String remove(int index){
 
 }*/
