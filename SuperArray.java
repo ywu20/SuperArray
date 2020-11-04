@@ -101,9 +101,13 @@ public int indexOf(String s){
     return -1;
 
 }
-/*
-public String[] toArray(){
 
+public String[] toArray(){
+  String[] out = new String[size];
+  for(int i=0; i<size;i++){
+    out[i]=data[i];
+  }
+  return out;
 }
-*/
+
 }
