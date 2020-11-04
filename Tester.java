@@ -1,6 +1,7 @@
 import java.util.Arrays;
 public class Tester{
   public static void main(String[] args){
+    /*
   SuperArray words = new SuperArray();
   System.out.println(words.size());
   words.add("kani");
@@ -39,7 +40,7 @@ System.out.println(words);
 System.out.println(words.indexOf("add"));
 System.out.println(words.indexOf("ADD"));
 System.out.println(Arrays.toString(words.toArray()));
-
+*/
 
   }
 }
