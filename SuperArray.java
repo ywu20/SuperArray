@@ -37,4 +37,32 @@ private void resize(){
   data = newArr;
 }
 
+public boolean isEmpty(){
+  return size==0;
+}
+
+public void clear(){
+  size=0;
+}
+
+public String toString(){
+  String out ="[";
+  for(int i=0; i<size-1; i++){
+    out+=data[i]+",";
+  }
+  if(size!=0){
+  out+=data[size-1];
+}
+  out+="]";
+  return out;
+}
+
+public boolean contains(String s){
+  for(int i=0;i<size;i++){
+    if(data[i].equals(s)){
+      return true;
+    }
+  }
+  return false;
+}
 }
