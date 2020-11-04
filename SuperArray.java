@@ -42,6 +42,7 @@ public boolean isEmpty(){
 }
 
 public void clear(){
+  data = new String[10];
   size=0;
 }
 
