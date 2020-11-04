@@ -6,6 +6,10 @@ public SuperArray(){
   data=new String[10];
 }
 
+public SuperArray(int initialCapacity){
+  data= new String[initialCapacity];
+}
+
 public int size(){
   return size;
 }
@@ -19,6 +23,15 @@ public boolean add (String element){
   return true;
 }
 
+/*
+public void add(int index, String element){
+
+}
+
+public String remove(int index){
+
+}*/
+
 public String get(int index){
   return data[index];
 }
@@ -30,7 +43,7 @@ public String set (int index, String element){
 }
 
 private void resize(){
-  String[] newArr = new String[data.length+10];
+  String[] newArr = new String[data.length*2];
   for (int i=0; i<data.length; i++){
     newArr[i]=data[i];
   }
@@ -66,4 +79,14 @@ public boolean contains(String s){
   }
   return false;
 }
+
+/*
+public int indexOf(String s){
+
+}
+
+public String[] toArray(){
+
+}
+*/
 }
