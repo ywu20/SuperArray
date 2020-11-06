@@ -12,13 +12,10 @@ public class Demo{
   public static SuperArray findOverlap(SuperArray a, SuperArray b){
     SuperArray out = new SuperArray();
     for(int i=0;i<a.size();i++){
-      for(int j=0; j<b.size();j++){
-      if(a.get(i)==b.get(j)){
+      if(b.contains(a.get(i))){
         out.add(a.get(i));
       }
     }
-    }
-    removeDuplicates(out);
     return out;
   }
   public static void main(String[] args){
@@ -45,6 +42,6 @@ SuperArray b = new SuperArray();
   System.out.println(a);
   System.out.println(b);
   System.out.println(findOverlap(a,b));
-  
+
   }
 }
