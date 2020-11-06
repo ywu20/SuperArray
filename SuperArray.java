@@ -118,4 +118,13 @@ public int lastIndexOf(String value){
   }
   return -1;
 }
+
+public boolean equals(SuperArray other){
+  for(int i=0; i<size;i++){
+    if(data[i]!=other.get(i)){
+      return false;
+    }
+  }
+  return true;
+}
 }
