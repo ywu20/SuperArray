@@ -1,10 +1,9 @@
 public class Demo{
   public static SuperArray removeDuplicates(SuperArray s){
     for(int i=0; i<s.size(); i++){
-      for(int j=i+1;j<s.size(); j++){
-        if(s.get(i)== s.get(j)){
-          s.remove(j);
-        }
+      if(i!= s.indexOf(s.get(i))){
+        s.remove(i);
+        i--;
       }
     }
     return s;
@@ -34,6 +33,7 @@ public class Demo{
   removeDuplicates(words);
   System.out.println(words);
 
+
 SuperArray a = new SuperArray();
 SuperArray b = new SuperArray();
 
@@ -45,5 +45,6 @@ SuperArray b = new SuperArray();
   System.out.println(a);
   System.out.println(b);
   System.out.println(findOverlap(a,b));
+  
   }
 }
