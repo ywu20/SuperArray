@@ -49,12 +49,15 @@ return out;
 
 public String get(int index){
   if(index<0 || index>=size){
-    throw new IndexOutOfBoundsException("the index of what you are trying to get is out of bounds");
+    throw new IndexOutOfBoundsException("the index is out of bounds");
   }
   return data[index];
 }
 
 public String set (int index, String element){
+  if(index<0 || index>=size){
+    throw new IndexOutOfBoundsException("the index is out of bounds");
+  }
   String out = data[index];
   data[index]=element;
   return out;

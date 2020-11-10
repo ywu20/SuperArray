@@ -54,5 +54,11 @@ try{
 }catch(IndexOutOfBoundsException e){
   e.printStackTrace();
 }
+
+try{
+  words.set(10,"234");
+}catch(IndexOutOfBoundsException e){
+  e.printStackTrace();
+}
   }
 }
