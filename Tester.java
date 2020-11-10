@@ -1,12 +1,13 @@
 import java.util.Arrays;
 public class Tester{
   public static void main(String[] args){
-
+/*
   SuperArray words = new SuperArray();
   System.out.println(words.size());
   words.add("kani");
   words.add("uni");
   words.add("ebi");
+  */
   /*
   for (int i=0;i<11;i++){
     words.add("add");
@@ -42,6 +43,7 @@ System.out.println(words.indexOf("add"));
 System.out.println(words.indexOf("ADD"));
 System.out.println(Arrays.toString(words.toArray()));
 */
+/*
 try{
 SuperArray negativeCapacity = new SuperArray(-5);
 }
@@ -71,6 +73,6 @@ try{
   words.remove(5);
 }catch(IndexOutOfBoundsException e){
   e.printStackTrace();
-}
+}*/
   }
 }
