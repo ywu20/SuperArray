@@ -60,5 +60,17 @@ try{
 }catch(IndexOutOfBoundsException e){
   e.printStackTrace();
 }
+
+try{
+  words.add(-5,"234");
+}catch(IndexOutOfBoundsException e){
+  e.printStackTrace();
+}
+
+try{
+  words.remove(5);
+}catch(IndexOutOfBoundsException e){
+  e.printStackTrace();
+}
   }
 }

@@ -28,6 +28,9 @@ public boolean add (String element){
 
 
 public void add(int index, String element){
+  if(index<0 || index>=size){
+    throw new IndexOutOfBoundsException("the index "+index+" is out of bounds");
+  }
   for(int i=size; i>index;i--){
     if(size+1>data.length){
       resize();
@@ -39,6 +42,9 @@ public void add(int index, String element){
 }
 
 public String remove(int index){
+  if(index<0 || index>=size){
+    throw new IndexOutOfBoundsException("the index "+index+" is out of bounds");
+  }
   String out=data[index];
 for(int i=index; i<size-1;i++){
   data[i]=data[i+1];
@@ -49,14 +55,14 @@ return out;
 
 public String get(int index){
   if(index<0 || index>=size){
-    throw new IndexOutOfBoundsException("the index is out of bounds");
+    throw new IndexOutOfBoundsException("the index "+index+" is out of bounds");
   }
   return data[index];
 }
 
 public String set (int index, String element){
   if(index<0 || index>=size){
-    throw new IndexOutOfBoundsException("the index is out of bounds");
+    throw new IndexOutOfBoundsException("the index "+index+" is out of bounds");
   }
   String out = data[index];
   data[index]=element;
