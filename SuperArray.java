@@ -7,6 +7,9 @@ public SuperArray(){
 }
 
 public SuperArray(int initialCapacity){
+  if(initialCapacity<0){
+    throw new IllegalArgumentException("Cannot create a superArray with negative capacity.");
+  }
   data= new String[initialCapacity];
 }
 
@@ -45,6 +48,9 @@ return out;
 }
 
 public String get(int index){
+  if(index<0 || index>=size){
+    throw new IndexOutOfBoundsException("the index of what you are trying to get is out of bounds");
+  }
   return data[index];
 }
 
@@ -55,7 +61,7 @@ public String set (int index, String element){
 }
 
 private void resize(){
-  String[] newArr = new String[data.length*2];
+  String[] newArr = new String[data.length*2+1];
   for (int i=0; i<data.length; i++){
     newArr[i]=data[i];
   }
@@ -127,4 +133,6 @@ public boolean equals(SuperArray other){
   }
   return true;
 }
+
+
 }
