@@ -16,6 +16,7 @@ public class Demo{
         out.add(a.get(i));
       }
     }
+    removeDuplicates(out);
     return out;
   }
 
