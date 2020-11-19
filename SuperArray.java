@@ -28,7 +28,7 @@ public boolean add (String element){
 
 
 public void add(int index, String element){
-  if(index<0 || index>=size){
+  if(index<0 || index>size){
     throw new IndexOutOfBoundsException("the index "+index+" is out of bounds");
   }
   for(int i=size; i>index;i--){
